@@ -5,15 +5,12 @@ import "fmt"
 var umur int = 17
 
 func main() {
-	const kampus string = "Universitas Komputer Indonesia"
-	nama := "James Catalunya"
-
 	var (
-		semester = 3
-		ipk      float32
+		nilai1 = 81
+		nilai2 = 90
+		nilai3 = 40
 	)
-	ipk = 6.81
+	var ip = (nilai1 + nilai2 + nilai3) / 3
 
-	fmt.Println("Saya", nama, "kuliah di", kampus, "semester", semester, "Saya berumur", umur, "tahun.")
-	fmt.Println("Ipk saya adalah ", ipk)
+	fmt.Println("Ip saya adalah", ip)
 }
