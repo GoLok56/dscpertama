@@ -3,15 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var nilai [3]int
-	nilai[0] = 80
-	nilai[1] = 90
-	nilai[2] = 40
+	var umurGebetan = 21
 
-	fmt.Println(nilai)
-
-	warna := []string{"Hitam", "Merah", "Hijau"}
-	for i, value := range warna {
-		fmt.Println("Warna ke", i+1, "adalah", value)
+	if umurGebetan > 20 {
+		fmt.Println("Udah mateng")
+	} else if umurGebetan > 17 {
+		fmt.Println("Dede gemes")
+	} else {
+		fmt.Println("Buset kamu pedopil?")
 	}
 }
