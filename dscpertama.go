@@ -3,16 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	hasilPenjumlahan := add(5, 7)
-	fmt.Println(hasilPenjumlahan)
+	var nilai [3]int
+	nilai[0] = 80
+	nilai[1] = 90
+	nilai[2] = 40
 
-	printInfo("James Catalunya", 17)
-}
+	fmt.Println(nilai)
 
-func add(a, b int) int {
-	return a + b
-}
-
-func printInfo(nama string, umur int) {
-	fmt.Println("Nama saya", nama, "Umur saya ", umur)
+	warna := []string{"Hitam", "Merah", "Hijau"}
+	for i, value := range warna {
+		fmt.Println("Warna ke", i+1, "adalah", value)
+	}
 }
