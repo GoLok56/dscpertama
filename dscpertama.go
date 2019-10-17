@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-var umur int = 17
-
 func main() {
 	var (
 		nilai1 = 81
