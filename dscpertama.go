@@ -3,25 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	var nilai = []int{80, 20, 10, 40, 90, 50, 70}
-	var totalNilai = 0
-	for _, value := range nilai {
-		totalNilai = totalNilai + value
-	}
-	var banyakNilai = len(nilai)
-	var ip = totalNilai / banyakNilai
-	fmt.Println("Ip saya adalah", ip)
+	x := 10
+	fmt.Println("Sebelum diubah tanpa pointer", x)
+	changeIntValue(x)
+	fmt.Println("Sesudah diubah tanpa pointer", x)
 
-	fmt.Println("\nNilai dari for loop auto inc:")
-	for i := 0; i < banyakNilai; i++ {
-		fmt.Println(nilai[i])
-	}
+	fmt.Println("Sebelum diubah dengan pointer", x)
+	changeIntValuePointer(&x)
+	fmt.Println("Sesudah diubah dengan pointer", x)
+}
 
-	fmt.Println("\nNilai dari for loop manual inc:")
-	i := 1
-	for i < banyakNilai {
-		fmt.Println(nilai[i])
-		i++
-	}
+func changeIntValue(x int) {
+	x = 2
+}
 
+func changeIntValuePointer(x *int) {
+	*x = 2
 }
