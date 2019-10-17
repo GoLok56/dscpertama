@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var (
-		nilai1 = 81
-		nilai2 = 90
-		nilai3 = 40
-	)
-	var ip = (nilai1 + nilai2 + nilai3) / 3
+	hasilPenjumlahan := add(5, 7)
+	fmt.Println(hasilPenjumlahan)
 
-	fmt.Println("Ip saya adalah", ip)
+	printInfo("James Catalunya", 17)
+}
+
+func add(a, b int) int {
+	return a + b
+}
+
+func printInfo(nama string, umur int) {
+	fmt.Println("Nama saya", nama, "Umur saya ", umur)
 }
